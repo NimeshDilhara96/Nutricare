@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06aa5e">
+    <meta name="msapplication-navbutton-color" content="#06aa5e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Login | Nutricare ™</title>
+    <link rel="shortcut icon" href="Auth/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Auth/assets/css/styles.css">
+    <script src="Auth/assets/js/script.js" defer></script>
+</head>
+<body>
+    <main class="card-container slideUp-animation">
+        <div class="image-container">
+            <h1 class="company">Nutricare <sup>&trade;</sup></h1>
+            <img src="Auth/assets/images/register.png" class="illustration" alt="">
+        </div>
+        <form action="login.php" method="POST">
+            <div class="form-container slideRight-animation">
+    
+                <h1 class="form-header">
+                    Log in
+                </h1>
+    
+                <div class="input-container">
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" required>
+                    <span>
+                        E-mail
+                    </span>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="input-container">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" class="user-password" required>
+                    <span>Password</span>
+                    <div class="error"></div>
+                </div>
+
+                <div id="btm">
+                    <button type="submit" class="submit-btn">Log In</button>
+                    <p class="btm-text">
+                        Don't have an account yet? <a href="Auth/Registration.php">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+        
+    </main>
+</body>
+</html>
+
